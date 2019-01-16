@@ -4,6 +4,8 @@ A minimal repo to reproduce a rare test failure related to how ts-jest handles t
 # Description
 Ts-jest succeeds to transform a ts file from a dependent module if the module has been linked with `npm link`. However it fails to transform the same file if the module was copied to node_modules instead of linking with `npm link`.
 
+**Reproducible only on Linux / Mac, works well on Windows.**
+
 The error message looks like:
 
 ```
