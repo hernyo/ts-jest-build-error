@@ -1,0 +1,18 @@
+{
+  "name": "jestApp",
+  "version": "0.1.1",
+  "description": "Main app for reproducing a build error in ts-jest",
+  "main": "index.ts",
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.1.2"
+  },
+  "scripts": {
+    "build": "tsc --noEmit && tslint -p .",
+    "test": "jest",
+    "clearJest": "jest --clearCache"
+  },
+  "dependencies": {}
+}
